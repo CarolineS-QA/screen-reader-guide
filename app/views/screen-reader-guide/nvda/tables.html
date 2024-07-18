@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>
+  
+    Tables - NVDA -  HMRC accessibility manual
+
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/govuk/assets/images/favicon.ico" type="image/x-icon">
+      <link rel="mask-icon" href="/govuk/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
+      <link rel="apple-touch-icon" sizes="180x180" href="/govuk/assets/images/govuk-apple-touch-icon-180x180.png">
+      <link rel="apple-touch-icon" sizes="167x167" href="/govuk/assets/images/govuk-apple-touch-icon-167x167.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/govuk/assets/images/govuk-apple-touch-icon-152x152.png">
+      <link rel="apple-touch-icon" href="/govuk/assets/images/govuk-apple-touch-icon.png">
+    
+
+    
+  <!--[if lte IE 8]><link href="/public/stylesheets/application-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if gt IE 8]><!--><link href="/public/stylesheets/application.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+
+
+  <link rel="stylesheet" type="text/css" href="https://www.tax.service.gov.uk/assets/hmrc-frontend/1.15.3/hmrc-frontend-1.15.3.min.css" />
+
+
+    
+    
+    <meta property="og:image" content="/govuk/assets/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+    
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+    
+
+    
+  
+
+  
+
+<header role="banner">
+  <div class="govuk-header hmrc-header  hmrc-header--with-additional-navigation" data-module="header">
+    <div class="govuk-header__container govuk-width-container">
+      <div class="govuk-header__logo">
+        <a href="/" class="govuk-header__link govuk-header__link--homepage">
+          <span class="govuk-header__logotype-text">HMRC</span>
+          <span class="govuk-header__product-name">Accessibility Manual</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+    
+      <div class="govuk-width-container ">
+        
+        <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
+          
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+        <header class="hmrc-page-heading">
+  <h1 class="govuk-heading-xl">Tables</h1><p class="govuk-caption-xl hmrc-caption-xl"><span class="govuk-visually-hidden">This section is </span>NVDA</p></header>
+
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-inset-text">You should only use tables to present related data and help users compare information.</p>
+
+        <p>Tables can be quite complex elements to navigate and often hold a lot of data the user will need to process. We can make that much easier by ensuring tables are marked up correctly.</p>
+        <ul class="govuk-list govuk-list--bullet">
+            <li>use <code>th</code> for headings to associate the data with the correct heading</li>
+            <li>add <code>scope</code> attributes to headings where appropriate</li>
+            <li>use <code>thead</code> and <code>tbody</code></li>
+            <li>add a <code>caption</code> to indicate the contents</li>
+        </ul>
+        <p>There are two identically presented tables on this page.</p>
+
+        <p>Use <kbd>t</kbd> to jump to each table.</p>
+        <p>You'll see the first table is unnamed, whilst the second is labelled using the <code>caption</code> element. This is especially important where there might be more than one table on the page as this will assist users in finding the data they want.</p>
+        <p class="govuk-inset-text">Tables without captions mean the user has to navigate the complex data and try to work out what it means.</p>
+
+        <p>To navigate a table you use a more complex key combination than normal in NVDA. You can use <kbd>left/right arrow</kbd> keys to progress through the table in source‐code order, cell by cell, row by row. This will just give you the basic copy information. However you can also use <kbd>Control</kbd> + <kbd>Alt</kbd> and either <kbd>left/right arrow</kbd> or <kbd>up/down arrow</kbd> keys to move horizontally and vertically too. This is how you should test a table. This additional combination exposes the row and column information as you move around, but only if the table is correctly marked-up.</p>
+        <p>On the first table you will hear the number of the column and row you are on read out along with the contents of the cell you are in, but there is no distinction between any of the cells.</p>
+
+
+        <h2 class="govuk-heading-l">Poorly marked-up table</h2>
+        <div class="example">
+            <table class="govuk-table">
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__header">Date</td>
+                        <td class="govuk-table__header">Amount</td>
+                        <td class="govuk-table__header">Status</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__header">June 2020</td>
+                        <td class="govuk-table__cell">£109.80</td>
+                        <td class="govuk-table__cell">Complete</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__header">July 2020</td>
+                        <td class="govuk-table__cell">£155</td>
+                        <td class="govuk-table__cell">Complete</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__header">August 2020</td>
+                        <td class="govuk-table__cell">£145.40</td>
+                        <td class="govuk-table__cell">Pending</td>
+                    </tr>
+            </table>
+        </div>
+
+        <p>Now try the second table.</p>
+        <p>As you move around using <kbd>Control</kbd> + <kbd>Alt</kbd> + <kbd>arrow keys</kbd> you get some additional information.</p>
+        <p>As you move from column to column you will hear the column heading announced and as you move from row to row you will hear the row heading announced.</p>
+        <p>Correctly marking up your headings creates relationships between the data and will ensure the user is able to locate themselves in the table and be sure they are getting the correct information.</p>
+
+        <h2 class="govuk-heading-l">Well marked‐up table</h2>
+        <div class="example">
+            <table class="govuk-table">
+                <caption class="govuk-visually-hidden">Dates and amounts</caption>
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header">Date</th>
+                        <th scope="col" class="govuk-table__header">Amount</th>
+                        <th scope="col" class="govuk-table__header">Status</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">June 2020</th>
+                        <td class="govuk-table__cell">£109.80</td>
+                        <td class="govuk-table__cell">Complete</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">July 2020</th>
+                        <td class="govuk-table__cell">£155</td>
+                        <td class="govuk-table__cell">Complete</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">August 2020</th>
+                        <td class="govuk-table__cell">£145.40</td>
+                        <td class="govuk-table__cell">Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="govuk-inset-text">
+            <p>Give tables captions to help identify what the table is about. Correctly mark up your tables to give meaningful associations between your data.</p>
+        </div>
+
+
+
+
+        <a href="/nvda/content" role="button" class="govuk-button">Next, content</a>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third sidebar">
+
+        
+        
+<h2 class="govuk-heading-m">Commands used so far</h2>
+<dl class="govuk-body command-list">
+    <dt>Stop NVDA talking</dt>
+    <dd><kbd>Ctrl</kbd></dd>
+
+    <dt>Move to the top of the page</dt>
+    <dd><kbd>Ctrl</kbd> + <kbd>Home</kbd></dd>
+
+    <dt>Move from one item to the next</dt>
+    <dd><kbd>Down/up arrows</kbd></dd>
+
+    <dt>Read next/previous paragraph</dt>
+    <dd><kbd>Ctrl</kbd> + <kbd>Down/up arrows</kbd></dd>
+
+    <dt>Activate a button or link</dt>
+    <dd><kbd>Enter</kbd></dd>
+
+
+
+    <dt>Show elements list dialog</dt>
+    <dd><kbd class="vo">Modifier key</kbd> + <kbd>F7</kbd></dd>
+
+    <dt>Navigate items in the dialog</dt>
+    <dd><kbd>Tab</kbd> or <kbd>Arrow keys</kbd></dd>
+
+    <dt>Close the dialog</dt>
+    <dd><kbd>Escape</kbd></dd>
+
+
+
+
+    <dt>Navigate by landmark</dt>
+    <dd><kbd>d</kbd></dd>
+
+
+
+    <dt>Navigate by headings</dt>
+    <dd><kbd>h</kbd></dd>
+
+
+
+    <dt>Navigate by form fields</dt>
+    <dd><kbd>f</kbd></dd>
+
+    <dt>Enter/exit forms mode</dt>
+    <dd><kbd class="vo">Modifier key</kbd> + <kbd>Space</kbd></dd>
+
+
+
+
+    <dt>Select a radio or checkbox</dt>
+    <dd><kbd>Enter</kbd></dd>
+
+
+
+    <dt>Navigate by links</dt>
+    <dd>Next link <kbd>Tab</kbd></dd>
+    <dd>Next unvisited link <kbd>u</kbd></dd>
+    <dd>Next visited link <kbd>v</kbd></dd>
+
+
+
+    <dt>Navigate a table</dt>
+    <dd><kbd>Ctrl</kbd> + <kbd>Alt</kbd> and <kbd>Arrow keys</kbd></dd>
+
+    <dt>Navigate by tables</dt>
+    <dd><kbd>t</kbd></dd>
+
+
+
+    <dt>Read text word‐by‐word</dt>
+    <dd><kbd>Ctrl</kbd> + <kbd>right arrow</kbd></dd>
+
+    <dt>Read text character‐by‐character</dt>
+    <dd><kbd>left/right arrow</kbd></dd>
+
+</dl>
+
+
+
+        
+        
+<h2 class="govuk-heading-m">Sections</h2>
+<ul class="govuk-list hmrc-list-indented">
+    <li><a  href="/nvda/">Introduction</a></li>
+    <li><a href="/nvda/basic-navigation">Basic navigation</a></li>
+    <li><a href="/nvda/dialogs">The listing dialogs</a></li>
+    <li><a href="/nvda/landmarks">Landmarks</a></li>
+    <li><a href="/nvda/headings">Headings</a></li>
+    <li><a href="/nvda/form-fields-text">Form fields</a></li>
+    <li><a href="/nvda/form-fields-radio">Grouped form fields</a></li>
+    <li><a href="/nvda/hints-and-errors">Hints and errors</a></li>
+    <li><a href="/nvda/error-summaries">Error summaries</a></li>
+    <li><a href="/nvda/links">Links</a></li>
+    <li><a  aria-current="page" href="/nvda/tables">Tables</a></li>
+    <li><a href="/nvda/content">Content</a></li>
+    
+    <li><a href="/nvda/summary">Summary</a></li>
+    
+</ul>
+
+    </div>
+</div>
+
+
+        </main>
+      </div>
+    
+
+    
+      <footer class="govuk-footer " role="contentinfo">
+  <div class="govuk-width-container ">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+    
+  
+    <!-- Javascript -->
+<script src="/public/javascripts/jquery-1.11.3.js"></script>
+
+
+  <script src="/extension-assets/govuk-frontend/govuk/all.js"></script>
+
+  <script src="/extension-assets/hmrc-frontend/hmrc/all.js"></script>
+
+  <script src="/extension-assets/hmrc-frontend/hmrc/init-all.js"></script>
+
+
+<script src="/public/javascripts/application.js"></script>
+
+
+  <script src="/public/javascripts/auto-store-data.js"></script>
+
+
+    
+  
+  <!-- GOV.UK Prototype Kit v9.8.0 -->
+
+  </body>
+</html>

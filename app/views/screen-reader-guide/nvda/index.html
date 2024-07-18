@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template ">
+  <head>
+    <meta charset="utf-8">
+    <title>
+    NVDA - Assistive technology -  HMRC accessibility manual
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b0c0c"> 
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+      <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="/govuk/assets/images/favicon.ico" type="image/x-icon">
+      <link rel="mask-icon" href="/govuk/assets/images/govuk-mask-icon.svg" color="#0b0c0c"> 
+      <link rel="apple-touch-icon" sizes="180x180" href="/govuk/assets/images/govuk-apple-touch-icon-180x180.png">
+      <link rel="apple-touch-icon" sizes="167x167" href="/govuk/assets/images/govuk-apple-touch-icon-167x167.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/govuk/assets/images/govuk-apple-touch-icon-152x152.png">
+      <link rel="apple-touch-icon" href="/govuk/assets/images/govuk-apple-touch-icon.png">
+    
+
+    
+  <!--[if lte IE 8]><link href="/public/stylesheets/application-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if gt IE 8]><!--><link href="/public/stylesheets/application.css" media="all" rel="stylesheet" type="text/css" /><!--<![endif]-->
+
+
+  <link rel="stylesheet" type="text/css" href="https://www.tax.service.gov.uk/assets/hmrc-frontend/1.15.3/hmrc-frontend-1.15.3.min.css" />
+
+
+    
+    
+    <meta property="og:image" content="/govuk/assets/images/govuk-opengraph-image.png">
+  </head>
+  <body class="govuk-template__body ">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+    
+
+    
+      <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+    
+
+    
+  
+
+  
+
+<header role="banner">
+  <div class="govuk-header hmrc-header  hmrc-header--with-additional-navigation" data-module="header">
+    <div class="govuk-header__container govuk-width-container">
+      <div class="govuk-header__logo">
+        <a href="/" class="govuk-header__link govuk-header__link--homepage">
+          <span class="govuk-header__logotype-text">HMRC</span>
+          <span class="govuk-header__product-name">Accessibility Manual</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+    
+      <div class="govuk-width-container ">
+        
+        <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
+          
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        NVDA
+      </h1>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+
+      <p class="govuk-body-l">
+        This guide will help you learn the basics of NVDA and some tips on how to test a service using it.
+      </p>
+      <p>NVDA is only available on Windows.</p>
+      <p>As NVDA is an operating system level screen reading application, it means that it can be used for pretty much anything on the computer. That also means you can move away from the web page and into the address bar.</p>
+      <p>If you get lost just use your mouse to click back onto the browser. We are testing the websites, not your ability with the screen‐reader.</p>
+
+      <h2 class="govuk-heading-l">Installing NVDA</h2>
+      <p>As NVDA is not built into the OS like Voiceover or Narrator, you will need to install it, so if you have not got it installed already, <a href="https://www.nvaccess.org">download NVDA for free from NV Access</a>.</p>
+      <p>If you have already got NVDA installed it is worth checking there are no pending updates. You should be testing with the latest version.</p>
+
+      <h2 class="govuk-heading-l">Browser choice</h2>
+      <p>Screen‐readers tend to work best with specific browsers. We currently recommend testing in <strong>Chrome</strong>, but check any new components or code which is specific to your service in <strong>Firefox</strong> as well.</p>
+
+      <h2 class="govuk-heading-l">How to start NVDA</h2>
+      <p>You start NVDA just like any other program in Windows.</p>
+      <p>When you start NVDA it will appear as a tool tray icon near the date and time, you may need to expand the tool tray to see it.</p>
+      <img src="/public/images/nvda/tray.png" alt="NVDA icon in the Windows tray" />
+      <p>Clicking on the icon will allow you to access the various settings. Whilst we recommend you leave most of the defaults to make consistent testing possible, there are a couple of changes which will make testing easier. </p>
+
+      <h3 class="govuk-heading-m">Change the Voice Synthesizer</h3>
+      <p>The default voice NVDA uses is very robotic not especially pleasant to listen to for long periods. We suggest you change it to use a different synthesizer which sounds more human.</p>
+      <p>Go to “Preferences”, then “Settings”, then “Speech”. Try out some of the synthesizers from the drop-down. Different voices using that synthesizer are available from the voices drop-down below it.</p>
+      <p>I find the Windows OneCore Hazel voice to be quite good, but try a few out and find one which you are happy listening to.</p>
+      <img src="/public/images/nvda/speech.png" alt="The voice synthesizer settings panel" />
+
+
+      <h3 class="govuk-heading-m">Turn off Say All</h3>
+      <p>When NVDA loads a new page, the defult setting is for it to read all of it out. As this can get annoying when testing, feel free to turn this off by going to “Preferences”, then “Settings”, then “Browse Mode” and unchecking the “Automatic say all on page load” option.</p>
+
+      <img src="/public/images/nvda/settings.png" alt="NVDA settings showing location of the Say All option" />
+
+      <h3 class="govuk-heading-m">Turn off mouse tracking</h3>
+      <p>If you hover over on anything now with the mouse, NVDA will announce what it is, and this will be the same for anything in the operating system as NVDA is an OS‐level screen‐reader. You shouldn't be using your mouse when testing however, and turning this feature off makes it easier to keep your place. To turn this off go to “Preferences”, then “Settings”, then “Mouse” and uncheck “Enable mouse tracking”.</p>
+
+      <img src="/public/images/nvda/mouse.png" alt="NVDA settings showing location of the Mouse Tracking option" />
+
+      <p>Now go to the next section using your normal mouse or keyboard but leaving NVDA on.</p>
+
+      <a href="/nvda/basic-navigation" role="button" class="govuk-button">Next, basic navigation</a>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third sidebar">
+
+      
+        
+<h2 class="govuk-heading-m">Sections</h2>
+<ul class="govuk-list hmrc-list-indented">
+    <li><a  aria-current="page"  href="/nvda/">Introduction</a></li>
+    <li><a href="/nvda/basic-navigation">Basic navigation</a></li>
+    <li><a href="/nvda/dialogs">The listing dialogs</a></li>
+    <li><a href="/nvda/landmarks">Landmarks</a></li>
+    <li><a href="/nvda/headings">Headings</a></li>
+    <li><a href="/nvda/form-fields-text">Form fields</a></li>
+    <li><a href="/nvda/form-fields-radio">Grouped form fields</a></li>
+    <li><a href="/nvda/hints-and-errors">Hints and errors</a></li>
+    <li><a href="/nvda/error-summaries">Error summaries</a></li>
+    <li><a href="/nvda/links">Links</a></li>
+    <li><a href="/nvda/tables">Tables</a></li>
+    <li><a href="/nvda/content">Content</a></li>
+    
+    <li><a href="/nvda/summary">Summary</a></li>
+    
+</ul>
+
+    </div>
+</div>
+
+
+        </main>
+      </div>
+    
+
+    
+      <footer class="govuk-footer " role="contentinfo">
+  <div class="govuk-width-container ">
+    
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          class="govuk-footer__licence-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 483.2 195.7"
+          height="17"
+          width="41"
+        >
+          <path
+            fill="currentColor"
+            d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+          />
+        </svg>
+        <span class="govuk-footer__licence-description">
+          All content is available under the
+          <a
+            class="govuk-footer__link"
+            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+            rel="license"
+          >Open Government Licence v3.0</a>, except where otherwise stated
+        </span>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <a
+          class="govuk-footer__link govuk-footer__copyright-logo"
+          href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+        >© Crown copyright</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+    
+  
+    <!-- Javascript -->
+<script src="/public/javascripts/jquery-1.11.3.js"></script>
+
+
+  <script src="/extension-assets/govuk-frontend/govuk/all.js"></script>
+
+  <script src="/extension-assets/hmrc-frontend/hmrc/all.js"></script>
+
+  <script src="/extension-assets/hmrc-frontend/hmrc/init-all.js"></script>
+
+
+<script src="/public/javascripts/application.js"></script>
+
+
+  <script src="/public/javascripts/auto-store-data.js"></script>
+
+
+    
+  
+  <!-- GOV.UK Prototype Kit v9.8.0 -->
+
+  </body>
+</html>
